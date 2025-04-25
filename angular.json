@@ -21,7 +21,7 @@
               "base": "docs",
               "browser": ""
             },
-            "baseHref": "https://nimblewolf.github.io/nibbl/",
+            "baseHref": "/nibbl/",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
