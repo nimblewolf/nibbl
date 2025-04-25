@@ -1,0 +1,18 @@
+:host app-search{
+    height: 100%;
+    display: block;
+}
+
+div.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100%;
+    div.form-container {
+        form {
+            mat-form-field {
+                width: 75vw;
+            }
+        }
+    }
+}
