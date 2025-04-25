@@ -1,7 +1,12 @@
 @use '@angular/material' as mat;
 
 header {
+    position: sticky;
+    top: 0;
+    z-index: 3;
+
     mat-toolbar {
+        position: sticky;
         span.home-label {
             &:hover {
                 cursor: pointer;
