@@ -4,5 +4,6 @@ import { RecipeComponent } from './recipe/recipe.component';
 
 export const routes: Routes = [
     { path: '', component: SearchComponent },
+    { path: 'home', component: SearchComponent },
     { path: 'recipe', component: RecipeComponent },
 ];
