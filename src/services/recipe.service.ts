@@ -12,7 +12,7 @@ export class RecipeService {
   private selectedRecipe$ = new BehaviorSubject(null);
 
   searchRecipe(input: string): Observable<any> {
-    return this.http.get(`https://wfxeecxapi.execute-api.ap-southeast-2.amazonaws.com/Stage1/searchRecipe?name=${input}`);
+    return this.http.get(`https://exsf415lj5.execute-api.ap-southeast-2.amazonaws.com/stage1/searchRecipe?name=${input}`);
   }
 
   updateSelectedRecipe(recipe:any): void {

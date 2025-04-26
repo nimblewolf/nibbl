@@ -1,7 +1,8 @@
 <div class="recipe-container">
     <ng-container *ngIf="recipeDetails">
         <div class="sub-container">
-            <h1>{{ recipeDetails.name }}</h1>
+            <h1>{{ recipeDetails.recipeName }}</h1>
+            <span>By {{ recipeDetails.createdBy }} at {{ recipeDetails.createdAt }}</span>
             <mat-card appearance="outlined">
                 <mat-card-content>
                     <h2>Ingredients</h2>
@@ -13,7 +14,7 @@
                     <mat-divider></mat-divider>
                     <h2>Method</h2>
                     <ol>
-                        <li *ngFor="let method of recipeDetails.method">
+                        <li *ngFor="let method of recipeDetails.Method">
                             {{ method }}
                         </li>
                     </ol>

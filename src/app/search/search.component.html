@@ -1,6 +1,7 @@
 
 <div class="search">
     <div class="form-container">
+      <p>Welcome to Nibbl! Browse through our recipes or search below</p>
         <form class="example-form">
           <mat-form-field class="example-full-width">
             <mat-label>Search recipe</mat-label>
@@ -12,7 +13,7 @@
                    [matAutocomplete]="auto">
             <mat-autocomplete #auto="matAutocomplete">
               @for (option of filteredOptions | async; track option) {
-                <mat-option [value]="option" (click)="navigateToRecipe(option)">{{option.name}}</mat-option>
+                <mat-option [value]="option" (click)="navigateToRecipe(option)">{{option.recipeName}}</mat-option>
               }
             </mat-autocomplete>
           </mat-form-field>

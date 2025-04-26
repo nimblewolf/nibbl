@@ -6,8 +6,10 @@
 div.search {
     display: flex;
     justify-content: center;
-    align-items: center;
     height:100%;
+    p {
+        width: 75vw;
+    }
     div.form-container {
         form {
             mat-form-field {
